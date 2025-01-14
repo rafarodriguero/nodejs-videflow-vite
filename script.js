@@ -7,6 +7,9 @@ async function buscarEMostrarVideos() {
 
   console.log(urlVideos);
 
+  console.log(import.meta.env.PROD);
+  console.log(import.meta.env.DEV);
+
   try {
     //const busca = await fetch("http://localhost:3000/videos");
     const busca = await axios.get(urlVideos);
